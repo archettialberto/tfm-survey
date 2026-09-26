@@ -1,0 +1,147 @@
+record_key,title,model,role,category,builds_on,architecture,pretraining_data
+doi:10.48550/arxiv.2112.10510,Transformers Can Do Bayesian Inference,pfn,core,pfn,,row_transformer,synthetic
+doi:10.48550/arxiv.2207.01848,TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second,tabpfn,core,pfn,pfn,row_transformer,synthetic
+doi:10.48550/arxiv.2210.10723,TabLLM: Few-shot Classification of Tabular Data with Large Language Models,tabllm,extension,language_model,,encoder_decoder_transformer,language_pretraining; inherited_checkpoint
+doi:10.48550/arxiv.2305.06090,XTab: Cross-table Pretraining for Tabular Transformers,xtab,core,transformer_encoder,,within_row_transformer,curated_tables
+doi:10.48550/arxiv.2310.07338,Towards Foundation Models for Learning on Tabular Data,llm_gtl,core,language_model,,transformer_decoder,curated_tables; inherited_checkpoint
+doi:10.48550/arxiv.2312.08598,MotherNet: A Foundational Hypernetwork for Tabular Classification,mothernet,core,hypernetwork,tabpfn,row_transformer; hypernetwork,synthetic
+doi:10.48550/arxiv.2305.02997,When Do Neural Nets Outperform Boosted Trees on Tabular Data?,,extension,analysis_theory,,,
+doi:10.48550/arxiv.2305.11097,Statistical Foundations of Prior-Data Fitted Networks,,extension,analysis_theory,pfn; tabpfn,,
+doi:10.48550/arxiv.2307.09249,UniTabE: A Universal Pretraining Protocol for Tabular Foundation Model in Data Science,unitabe,core,transformer_encoder,,within_row_transformer,curated_tables
+doi:10.48550/arxiv.2311.10609,Scaling TabPFN: Sketching and Feature Selection for Tabular Prior-Data Fitted Networks,,extension,context_management,tabpfn,,
+doi:10.48550/arxiv.2402.14335,HyperFast: Instant Classification for Tabular Data,hyperfast,core,hypernetwork,,hypernetwork,curated_tables
+doi:10.48550/arxiv.2402.16785,CARTE: Pretraining and Transfer for Tabular Learning,carte,core,transformer_encoder,,graph_network,knowledge_base; frozen_text_embedder
+doi:10.48550/arxiv.2403.01841,Making Pre-trained Language Models Great on Tabular Prediction,tp_berta,core,transformer_encoder,,transformer_encoder,curated_tables; inherited_checkpoint
+doi:10.48550/arxiv.2402.06971,In-Context Data Distillation with TabPFN,,extension,context_management,tabpfn,,
+doi:10.48550/arxiv.2402.11137,TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks,,extension,context_management,tabpfn,,
+doi:10.1007/978-3-031-63797-1_23,Interpretable Machine Learning for TabPFN,,extension,interpretability_fairness,tabpfn,,
+doi:10.48550/arxiv.2405.01147,Why Tabular Foundation Models Should Be a Research Priority,,extension,surveys_positions,,,
+arxiv:2405.13396,Fine-tuned In-Context Learning Transformers are Excellent Tabular Data Classifiers,tabforest,core,pfn,tabpfn,row_transformer,synthetic
+doi:10.48550/arxiv.2406.05207,Retrieval & Fine-Tuning for In-Context Tabular Models,,extension,context_management,tabpfn,,
+doi:10.48550/arxiv.2406.12031,Large Scale Transfer Learning for Tabular Data via Language Modeling,tabula_8b,core,language_model,,transformer_decoder,web_tables; inherited_checkpoint
+doi:10.48550/arxiv.2410.04560,GAMformer: Bridging Tabular Foundation Models and Interpretable Machine Learning,,extension,interpretability_fairness,pfn,,
+doi:10.48550/arxiv.2410.12034,A Survey on Deep Tabular Learning,,extension,surveys_positions,,,
+doi:10.48550/arxiv.2410.13516,PORTAL: Scalable Tabular Foundation Models via Content-Specific Tokenization,portal,core,transformer_encoder,,within_row_transformer,web_tables; frozen_text_embedder
+doi:10.48550/arxiv.2410.18164,TabDPT: Scaling Tabular Foundation Models on Real Data,tabdpt,core,pfn,tabpfn,row_transformer,curated_tables
+doi:10.48550/arxiv.2411.10634,Drift-Resilient TabPFN: In-Context Learning Temporal Distribution Shifts on Tabular Data,,extension,priors_pretraining_data,tabpfn,,
+doi:10.48550/arxiv.2505.14415,Table Foundation Models: on knowledge pre-training for tabular learning,tarte,core,transformer_encoder,carte,within_row_transformer,knowledge_base; frozen_text_embedder
+doi:10.48550/arxiv.2505.19825,Foundation Models for Tabular Data within Systemic Contexts Need Grounding,,extension,surveys_positions,,,
+doi:10.48550/arxiv.2509.06806,MachineLearningLM: Scaling Many-shot In-context Learning via Continued Pretraining,machinelearninglm,core,language_model,tabicl,transformer_decoder,synthetic; inherited_checkpoint
+doi:10.48550/arxiv.2511.03570,TabGemma: Text-Based Tabular ICL via LLM using Continued Pretraining and Retrieval,tabgemma,core,language_model,,transformer_decoder,web_tables; inherited_checkpoint
+doi:10.48550/arxiv.2512.00181,Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning,orion_bix,core,pfn,tabicl,staged_feature_row_transformer,synthetic
+doi:10.1038/s41586-024-08328-6,Accurate predictions on small data with a tabular foundation model,tabpfn_v2,core,pfn,tabpfn,axial_transformer,synthetic
+doi:10.48550/arxiv.2502.02527,TabPFN Unleashed: A Scalable and Effective Solution to Tabular Classification Problems,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2502.04573,Zero-shot Meta-learning for Tabular Prediction Tasks with Adversarially Pre-trained Transformer,,extension,priors_pretraining_data,tabpfn_v2,,
+doi:10.48550/arxiv.2502.05564,TabICL: A Tabular Foundation Model for In-Context Learning on Large Data,tabicl,core,pfn,tabpfn_v2,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2502.06684,EquiTabPFN: A Target-Permutation Equivariant Prior Fitted Networks,,extension,analysis_theory,tabpfn_v2,,
+doi:10.48550/arxiv.2502.08978,What exactly has TabPFN learned to do?,,extension,interpretability_fairness,tabpfn,,
+doi:10.48550/arxiv.2502.17361,A Closer Look at TabPFN v2: Understanding Its Strengths and Extending Its Capabilities,,extension,analysis_theory,tabpfn_v2,,
+doi:10.48550/arxiv.2503.11842,Test-Time Training Provably Improves Transformers as In-context Learners,,extension,analysis_theory,tabpfn_v2,,
+doi:10.1109/tpami.2026.3657217,Representation Learning for Tabular Data: A Comprehensive Survey,,extension,surveys_positions,,,
+doi:10.48550/arxiv.2505.09503,Towards Fair In-Context Learning with Tabular Foundation Models,,extension,interpretability_fairness,tabdpt; tabicl; tabpfn_v2,,
+doi:10.48550/arxiv.2505.11325,Uncertainty Quantification for Prior-Data Fitted Networks using Martingale Posteriors,,extension,analysis_theory,tabicl; tabpfn_v2,,
+doi:10.48550/arxiv.2505.16226,Realistic Evaluation of TabPFN v2 in Open Environments,,extension,analysis_theory,tabpfn_v2,,
+arxiv:2505.18125,TabSTAR: A Tabular Foundation Model for Tabular Data with Text Fields,tabstar,core,transformer_encoder,,transformer_encoder; within_row_transformer,curated_tables; inherited_checkpoint
+doi:10.48550/arxiv.2505.23947,Position: The Future of Bayesian Prediction Is Prior-Fitted,,extension,surveys_positions,pfn,,
+doi:10.48550/arxiv.2506.05584,TabFlex: Scaling Tabular Learning to Millions with Linear Attention,tabflex,core,pfn,tabpfn_v2,row_transformer; linear_attention_or_state_space,synthetic
+doi:10.48550/arxiv.2506.08982,On Finetuning Tabular Foundation Models,,extension,training_scaling,tabpfn,,
+doi:10.48550/arxiv.2506.10707,ConTextTab: A Semantics-Aware Tabular In-Context Learner,contexttab,core,pfn,tabpfn_v2,axial_transformer,web_tables; frozen_text_embedder
+doi:10.48550/arxiv.2506.15329,When and How Unlabeled Data Provably Improve In-Context Learning,,extension,analysis_theory,tabpfn_v2,,
+doi:10.48550/arxiv.2506.21387,Early Stopping Tabular In-Context Learning,,extension,training_scaling,tabpfn,,
+doi:10.48550/arxiv.2507.03971,Real-TabPFN: Improving Tabular Foundation Models via Continued Pre-training With Real-World Data,real_tabpfn,core,pfn,tabpfn_v2,axial_transformer,curated_tables; inherited_checkpoint
+doi:10.48550/arxiv.2507.07829,Towards Benchmarking Foundation Models for Tabular Data With Text,,extension,benchmark,tabpfn,,
+doi:10.48550/arxiv.2509.00326,Chunked TabPFN: Exact Training-Free In-Context Learning for Long-Context Tabular Data,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2509.03505,LimiX: Unleashing Structured-Data Modeling Capability for Generalist Intelligence,limix,core,pfn,,axial_transformer,synthetic
+doi:10.48550/arxiv.2510.06162,TabPFN-Wide: Continued Pre-Training for Extreme Feature Counts,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2510.14573,State-Space Models for Tabular Prior-Data Fitted Networks,,extension,training_scaling,tabpfn,,
+doi:10.48550/arxiv.2510.21204,Mitra: Mixed Synthetic Priors for Enhancing Tabular Foundation Models,mitra,core,pfn,tabpfn_v2,axial_transformer,synthetic
+doi:10.48550/arxiv.2511.02802,TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models,,extension,training_scaling,contexttab; tabdpt; tabicl; tabpfn,,
+doi:10.48550/arxiv.2511.02818,Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning,orion_msp,core,pfn,tabicl; orion_bix,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2511.03634,nanoTabPFN: A Lightweight and Educational Reimplementation of TabPFN,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2511.08667,TabPFN-2.5: Advancing the State of the Art in Tabular Foundation Models,tabpfn_2_5,core,pfn,real_tabpfn; tabpfn_v2,axial_transformer,synthetic; curated_tables
+doi:10.48550/arxiv.2511.14276,Comparing Task-Agnostic Embedding Models for Tabular Data,,extension,analysis_theory,tabicl; tabpfn; tabstar,,
+doi:10.48550/arxiv.2511.15432,Towards Understanding Layer Contributions in Tabular In-Context Learning Models,,extension,interpretability_fairness,,,
+doi:10.48550/arxiv.2511.15941,iLTM: Integrated Large Tabular Model,iltm,core,hypernetwork,,hypernetwork,curated_tables
+doi:10.48550/arxiv.2511.18278,From Tables to Signals: Revealing Spectral Adaptivity in TabPFN,,extension,analysis_theory,tabpfn_v2,,
+title:position unlocking the full potential of data science requires tabular foundation models agents and humans,"Position: unlocking the full potential of data science requires tabular foundation models, agents, and humans",,extension,surveys_positions,,,
+doi:10.48550/arxiv.2512.03307,Robust Tabular Foundation Models,,extension,analysis_theory,tabpfn_v2,,
+title:introducing tabfm a zero shot foundation model for tabular data,Introducing TabFM: A zero-shot foundation model for tabular data,tabfm,core,pfn,tabiclv2; tabpfn_2_5,axial_transformer; staged_feature_row_transformer,synthetic
+title:tabdpt turbo efficient in context learning for tabular prediction,TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction,tabdpt_turbo,core,pfn,tabdpt,row_transformer,curated_tables
+title:training fair tabular foundation models,Training Fair Tabular Foundation Models,,extension,interpretability_fairness,nanotabpfn,,
+doi:10.2139/ssrn.6745619,"Compositional Layer Pruning of Frozen Tabular Foundation Models When Single-Layer Importance Misleads, and What to Do About It",,extension,training_scaling,tabiclv2,,
+doi:10.48550/arxiv.2601.03657,In Search of Grandmother Cells: Tracing Interpretable Neurons in Tabular Representations,,extension,interpretability_fairness,tabpfn,,
+doi:10.48550/arxiv.2601.04110,Causal Data Augmentation for Robust Fine-Tuning of Tabular Foundation Models,,extension,priors_pretraining_data,mitra,,
+doi:10.48550/arxiv.2601.08181,TabPFN Through The Looking Glass: An interpretability study of TabPFN and its internal representations,,extension,interpretability_fairness,tabpfn_v2,,
+doi:10.48550/arxiv.2601.21731,Mechanistic Evidence for Spectral Structures in Prior-Data Fitted Networks,,extension,interpretability_fairness,tabpfn_2_5,,
+doi:10.48550/arxiv.2601.23068,ExplainerPFN: Towards tabular foundation models for model-free zero-shot feature importance estimations,,extension,interpretability_fairness,tabpfn,,
+doi:10.48550/arxiv.2602.02162,Interpretable Tabular Foundation Models via In-Context Kernel Regression,,extension,interpretability_fairness,tabicl,,
+doi:10.48550/arxiv.2602.05649,End-to-End Compression for Tabular Foundation Models,,extension,context_management,,,
+doi:10.48550/arxiv.2602.11139,"TabICLv2: A better, faster, scalable, and open tabular foundation model",tabiclv2,core,pfn,tabicl,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2603.04692,Engineering Regression Without Real-Data Training: Domain Adaptation for Tabular Foundation Models Using Multi-Dataset Embeddings,,extension,priors_pretraining_data,real_tabpfn; tabicl; tabpfn_2_5,,
+doi:10.48550/arxiv.2603.08206,Distributional Regression with Tabular Foundation Models: Evaluating Probabilistic Predictions via Proper Scoring Rules,,extension,analysis_theory,tabpfn,,
+doi:10.48550/arxiv.2603.29928,ScoringBench: A Benchmark for Evaluating Tabular Foundation Models with Proper Scoring Rules,,extension,benchmark,,,
+doi:10.48550/arxiv.2603.29946,Real-Time Explanations for Tabular Foundation Models,,extension,interpretability_fairness,nanotabpfn,,
+doi:10.1016/j.neunet.2026.108932,MultiTabPFN: Codebook-based extensions of TabPFN for high-class-count tabular classification,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2604.04868,Noise Immunity in In-Context Tabular Learning: An Empirical Robustness Analysis of TabPFN's Attention Mechanisms,,extension,analysis_theory,tabpfn_v2,,
+doi:10.48550/arxiv.2604.07019,ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations,,extension,interpretability_fairness,,,
+doi:10.48550/arxiv.2604.21696,Towards Universal Tabular Embeddings: A Benchmark Across Data Tasks,,extension,benchmark,,,
+doi:10.48550/arxiv.2604.25154,Prior-Aligned Data Cleaning for Tabular Foundation Models,,extension,priors_pretraining_data,tabpfn_v2,,
+doi:10.48550/arxiv.2605.04363,Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment,,extension,analysis_theory,localpfn; tabicl; tabpfn,,
+doi:10.48550/arxiv.2605.06047,TFM-Retouche: A Lightweight Input-Space Adapter for Tabular Foundation Models,,extension,context_management,tabiclv2,,
+doi:10.48550/arxiv.2605.06343,Mind the Gap? A Distributional Comparison of Real and Synthetic Priors for Tabular Foundation Models,,extension,priors_pretraining_data,tabicl,,
+doi:10.48550/arxiv.2605.06510,Is One Layer Enough? Understanding Inference Dynamics in Tabular Foundation Models,,extension,interpretability_fairness,nanotabpfn,,
+doi:10.48550/arxiv.2605.11262,Latent Chain-of-Thought Improves Structured-Data Transformers,,extension,training_scaling,nanotabpfn; tabicl,,
+doi:10.48550/arxiv.2605.12904,VIP-COP: Context Optimization for Tabular Foundation Models,,extension,context_management,tabpfn,,
+doi:10.48550/arxiv.2605.13986,TabPFN-3: Technical Report,tabpfn_3,core,pfn,tabpfn_2_5; tabiclv2,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2605.20234,TabPFN-MT: A Natively Multitask In-Context Learner for Tabular Data,,extension,training_scaling,tabpfn,,
+doi:10.48550/arxiv.2605.18383,TabH2O: A Unified Foundation Model for Tabular Prediction,tabh2o,core,pfn,tabicl,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2605.18654,Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees,,extension,training_scaling,limix; orion_msp; tabdpt; tabiclv2; tabpfn,,
+doi:10.48550/arxiv.2605.18696,Ensembling Tabular Foundation Models - A Diversity Ceiling And A Calibration Trap,,extension,analysis_theory,limix; tabiclv2; tabpfn,,
+doi:10.48550/arxiv.2605.18971,Shaping the Prior: How Synthetic Task Distributions Determine Tabular Foundation Model Quality,,extension,priors_pretraining_data,nanotabpfn; tabicl; tabpfn_v2,,
+doi:10.48550/arxiv.2605.19662,When Tabular Foundation Models Meet Strategic Tabular Data: A Prior Alignment Approach,,extension,priors_pretraining_data,tabpfn,,
+doi:10.48550/arxiv.2605.21288,A Mechanistic Study of Tabular Foundation Models,,extension,analysis_theory,tabicl; tabpfn,,
+doi:10.48550/arxiv.2605.21742,Correcting Class Imbalance in Prior-Data Fitted Networks for Tabular Classification,,extension,context_management,tabpfn_2_5,,
+doi:10.48550/arxiv.2605.27254,LUCoS: Latent Unsupervised Context Selection for Tabular Foundation Models,,extension,context_management,tabpfn_2_5,,
+doi:10.14428/esann/2026.es2026-261,"High Performance, Low Reliability: Uncertainty Benchmarking for Tabular Foundation Models",,extension,analysis_theory,,,
+doi:10.48550/arxiv.2605.28418,Explaining Tabular Foundation Model Differences Through Meta-Features,,extension,interpretability_fairness,,,
+doi:10.1109/mcse.2026.3701626,On the Uncertainty Quantification Ability of Tabular Foundation Models,,extension,analysis_theory,tabpfn,,
+arxiv:2606.03681,Speedrunning Tabular Foundation Model Pretraining,,extension,training_scaling,nanotabpfn,,
+doi:10.48550/arxiv.2606.04485,LimiX-2M: Mitigating Low-Rank Collapse and Attention Bottlenecks in Tabular Foundation Models,limix_2m,core,pfn,limix,axial_transformer,synthetic
+doi:10.48550/arxiv.2606.04876,Towards Pretraining Text Encoders for TabPFN,,extension,priors_pretraining_data,tabpfn,,
+doi:10.48550/arxiv.2606.05441,GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data,,extension,context_management,tabpfn_2_5,,
+doi:10.48550/arxiv.2606.07345,TabSwift: An Efficient Tabular Foundation Model with Row-Wise Attention,tabswift,core,pfn,tabpfn,row_transformer,synthetic
+doi:10.48550/arxiv.2606.11473,CRUMB: Efficient Prior Fitted Network Inference via Distributionally Matched Context Batching,,extension,context_management,tabiclv2; tabpfn,,
+doi:10.48550/arxiv.2606.12917,Where Computation Lives Inside TabPFN: Causal Localisation of Attention Head Function,,extension,interpretability_fairness,tabpfn_2_5,,
+arxiv:2606.29241,Towards Evaluating Data Priors for Tabular Foundation Models,,extension,priors_pretraining_data,nanotabpfn; tabforestpfn; tabicl,,
+doi:10.48550/arxiv.2606.30258,KnowsTFM: Knowledge-Informed Fine-Tuning of Small Tabular Foundation Models,,extension,training_scaling,nanotabpfn,,
+doi:10.48550/arxiv.2606.30410,"Beyond IID: How General Are Tabular Foundation Models, Really?",,extension,analysis_theory,,,
+doi:10.48550/arxiv.2606.31208,Probing Memorization of Tabular In-Context Learning,,extension,analysis_theory,contexttab,,
+doi:10.1038/s41467-026-75163-w,A multi-fidelity tabular prior-data fitted network model for accurate prediction and uncertainty quantification.,,extension,training_scaling,tabpfn_v2,,
+doi:10.48550/arxiv.2607.04809,Context-Constrained Transfer Learning for Tabular Foundation Models via Data Distillation,,extension,context_management,tabpfn_2_5,,
+doi:10.48550/arxiv.2607.26000,Empirical Evaluation of Out-Of-Distribution Performance of Tabular Foundation Models,,extension,analysis_theory,,,
+doi:10.48550/arxiv.2607.26628,Understanding Context Sampling in TabPFN on Small Tabular Datasets,,extension,context_management,tabpfn,,
+doi:10.48550/arxiv.2607.27546,Memory Efficient Tabular Foundation Models,,extension,training_scaling,tabpfn,,
+doi:10.5281/zenodo.20710462,Nori: A Tabular Foundation Model Trained on Synthetic Data,nori,core,pfn,,axial_transformer,synthetic
+doi:10.48550/arxiv.2608.25774,EXAONE Tabular 1.0: Technical Report,exaone,core,pfn,,axial_transformer,synthetic
+doi:10.48550/arxiv.2609.17895,TabPFN-3.5: Technical Report,tabpfn_3_5,core,pfn,tabpfn_3,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2609.04540,Mitra-v2 Technical Report,mitra_v2,core,pfn,mitra,axial_transformer,synthetic
+doi:10.48550/arxiv.2609.17488,LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence,limix_2,core,pfn,limix,axial_transformer,synthetic
+doi:10.48550/arxiv.2609.03880,Xiaomi-TabLDM: A Tabular Foundation Model Technical Report,tabldm,core,pfn,tabiclv2,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2609.22866,Causilo Technical Report,causilo,core,pfn,tabiclv2,staged_feature_row_transformer,synthetic
+doi:10.48550/arxiv.2608.27882,SOMTab: Set-Order Mamba for Efficient Tabular In-Context Learning,,extension,training_scaling,tabiclv2,,
+doi:10.48550/arxiv.2608.17856,ARASH: Adaptive Retrieval And Shot Selection for Tabular Prediction,,extension,context_management,tabdpt; tabpfn,,
+doi:10.48550/arxiv.2609.13031,Attention Quantization for Tabular Foundation Models,,extension,training_scaling,tabiclv2; tabpfn_3,,
+doi:10.48550/arxiv.2608.10837,TACTICL: Task-Aware Compression of Tabular ICL Models,,extension,training_scaling,tabpfn_2_5; tabpfn_v2,,
+doi:10.48550/arxiv.2608.06004,Do Tabular Foundation Models Agree with Themselves?,,extension,analysis_theory,tabdpt; tabfm; tabicl; tabiclv2; tabpfn_3; tabpfn_v2,,
+doi:10.48550/arxiv.2609.02766,"Do Tabular Foundation Models Know Physics? Contamination, Units, and the Deterministic Limit",,extension,analysis_theory,tabdpt; tabiclv2; tabpfn_2_5; tabpfn_3,,
+doi:10.48550/arxiv.2609.13202,Do Tabular Foundation Models Still Need Feature Engineering?,,extension,analysis_theory,tabicl; tabiclv2; tabpfn; tabpfn_2_5; tabpfn_3; tabpfn_v2,,
+doi:10.48550/arxiv.2609.06912,From Synthetic Priors to Model Behavior: Structural Coverage in Tabular Foundation Models,,extension,priors_pretraining_data,mitra; tabicl; tabiclv2; tabswift,,
+doi:10.48550/arxiv.2609.07441,TabBench-Bio: A Living Benchmark for Machine Learning on High-Dimensional Biomedical Tables,,extension,benchmark,,,
+doi:10.48550/arxiv.2605.12292,STRABLE: Benchmarking Tabular Machine Learning with Strings,,extension,benchmark,,,
+doi:10.48550/arxiv.2604.13332,Selecting Feature Interactions for Generalized Additive Models by Distilling Foundation Models,,extension,interpretability_fairness,tabicl; tabpfn_v2,,
+doi:10.48550/arxiv.2602.04596,Uncertainty Decomposition for Bayes-Filtered Transformers via Bayesian Predictive Inference,,extension,analysis_theory,pfn; tabpfn_2_5,,
+arxiv:2608.17957,Understanding the Surprising Generalization Properties of Tabular Foundation Models,,extension,analysis_theory,tabdpt; tabpfn,,
+doi:10.1145/3770855.3818030,StablePFN: Stable Prediction with Causal-Aware Tabular Foundation Model,,extension,priors_pretraining_data,limix; tabpfn_v2,,
+doi:10.3390/make8080244,The Current Generation of Tabular Foundation Models: A Critical Review,,extension,surveys_positions,,,
+doi:10.48550/arxiv.2608.16429,Localized TabICLv2: Scaling Tabular In-Context Learning through k-NN,,extension,context_management,tabiclv2,,
+doi:10.48550/arxiv.2608.03565,Enhancing Tabular Learners with Context-Aware Semantic Embeddings,,extension,training_scaling,contexttab; tabgemma; tabiclv2,,

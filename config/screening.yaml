@@ -1,0 +1,74 @@
+models:
+  - anthropic/claude-sonnet-5
+  - openai/gpt-6-sol
+
+# Neither model accepts a temperature; `none` disables reasoning instead.
+reasoning_effort: none
+
+system_prompt: >
+  Screen scientific records for an architectural survey of tabular foundation
+  models using only the supplied title and abstract. Use explicit evidence, do
+  not infer unstated content, and return unclear whenever a requested judgment
+  cannot be resolved. Return the requested JSON.
+
+scope: >
+  A tabular foundation model (TFM) is pretrained or meta-trained across datasets
+  or tasks and intended for reuse on new tabular datasets, with or without
+  adaptation. The review covers reusable TFM work for ordinary tabular
+  classification or regression: models, architecture, pretraining, data or prior
+  synthesis and selection, scaling, efficiency, adaptation, postprocessing,
+  ensembling, analysis, benchmarks, tooling, and surveys. Generation, cleaning,
+  imputation, and feature selection qualify only when used for TFM pretraining or
+  to support downstream classification or regression; they are out of scope as
+  final tasks. Also exclude forecasting and other sequence-dependent tasks,
+  survival analysis, anomaly detection, clustering, causal inference, Bayesian
+  optimization, graph or knowledge-graph tasks, relational learning, multimodal
+  prediction, and table understanding such as question answering, text-to-SQL,
+  extraction, or spreadsheet parsing. Data derived from another modality qualify
+  only when the model consumes an ordinary table and does not use the original
+  temporal, relational, or multimodal structure. Conventional per-dataset models
+  and foundation models for other modalities are out of scope.
+
+tfm_role:
+  primary_contribution: The work builds or changes a TFM itself, or its reusable training, adaptation, or inference method, so the result carries over to other datasets.
+  primary_object_of_study: The work analyzes, benchmarks, or provides tooling for TFMs; for a survey, any explicit TFM discussion, comparison, or classification qualifies even if the survey is broader.
+  primary_application_method: An existing TFM is a principal evaluated method for one domain problem without a reusable TFM contribution.
+  baseline_or_mention: In non-survey work, a TFM appears only as a baseline, secondary comparator, or incidental mention; in a survey, it is only named or cited without discussion.
+  absent: No model meeting the TFM definition is present.
+  unclear: The title and abstract do not establish the TFM's role.
+
+categories:
+  new_model: Introduces a new TFM or cross-dataset pretraining method.
+  model_extension: Contributes a reusable TFM change, such as architecture, pretraining, data or prior design, objectives, adaptation, inference, postprocessing, distillation, ensembling, or efficiency.
+  analysis: Produces generalizable findings or theory about TFMs, not merely results or interpretation from one domain application.
+  benchmark: Contributes a reusable TFM-focused dataset, protocol, or broad comparative evaluation.
+  application: Uses existing TFMs for a specific domain problem without a claimed reusable TFM contribution or general TFM analysis.
+  tooling: Contributes reusable TFM software or infrastructure.
+  survey: A survey explicitly discusses, compares, or classifies TFMs, even if TFMs are not its main topic.
+  out_of_scope: The model or final task does not meet the scope definition; this takes precedence over all contribution categories.
+  unclear: The available title and abstract do not establish a contribution category.
+
+task_prompt: |
+  First give one evidence-based reason of at most 35 words, then return two
+  judgments.
+
+  1. category: First apply the task boundary. Use out_of_scope for an excluded
+     model or final task even if the paper proposes a novel method. Otherwise
+     select the paper's primary contribution.
+  2. tfm_role: Judge what the work does with TFMs.
+
+  A claimed reusable contribution transferable beyond one domain is
+  primary_contribution; domain-specific use without one is
+  primary_application_method. For surveys, explicit TFM discussion or comparison
+  is primary_object_of_study even when the survey is broader; a bare name or
+  citation is baseline_or_mention.
+
+  Use unclear for either field when the title and abstract do not support a
+  decision. If the abstract is absent, use explicit title evidence only.
+
+adjudication:
+  exclude_audit_fraction: 0.10
+  exclude_audit_seed: 42
+  blacklist:
+    tfm_role: [primary_application_method, baseline_or_mention, absent]
+    category: [application, out_of_scope]

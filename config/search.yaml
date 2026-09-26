@@ -1,0 +1,7 @@
+cutoff_date: "2026-09-15"
+sources: [semantic_scholar, openalex]
+
+queries:
+  - tabular foundation model
+  - prior-data fitted network
+  - TabPFN
