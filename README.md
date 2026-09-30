@@ -24,9 +24,7 @@ data/
   manual_additions.csv  the 15 manually added works
   screening.csv         two screening labels per searched record
   adjudication.csv      policy decision and final human decision per searched record
-  paper_categories.csv  the 146 included works with their role, family, and model characteristics
-paper/
-  tfm-survey-arxiv.pdf
+  paper_categories.csv  the 146 included works
 ```
 
 Every file is keyed by `record_key`, which is the DOI (`doi:...`), the arXiv ID
@@ -77,6 +75,9 @@ exactly the same records. Use `--refresh` to bypass the local search cache in
 
 ## Citation
 
-```bibtex
-TODO
+Preprint on SSRN (current version):
+```
+Archetti, Alberto and Mastroleo, Marina and Sabella, Mattia and Cappiello, Cinzia and
+Matteucci, Matteo, Tabular Foundation Models: A Systematic Survey (September 26, 2026).
+Available at SSRN: https://ssrn.com/abstract=7531718 or http://dx.doi.org/10.2139/ssrn.7531718
 ```
